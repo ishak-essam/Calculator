@@ -1,4 +1,5 @@
 <div class="calculator card" role="main">
+  <h1>Calculator</h1>
   <label type="text" class="calculator-screen z-depth-1">{{ resulat }}</label>
 
   <div class="calculator-keys">
@@ -8,7 +9,7 @@
       *ngFor="let item of ['+', '-', '/', '*']"
       (click)="Show(item)"
     >
-      +
+      {{ item }}
     </button>
 
     <button

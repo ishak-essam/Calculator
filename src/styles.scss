@@ -14,13 +14,11 @@ html {
 }
 
 .calculator {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 300px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  margin: auto;
+  width: 40%;
+  border: 3px solid rgb(34, 34, 34);
+  padding: 10px;
+  text-align: center;
 }
 
 .calculator-screen {
@@ -36,19 +34,19 @@ html {
 }
 
 button {
-  height: 60px;
+  height: 40px;
   font-size: 2rem !important;
 }
 
 .equal-sign {
   height: 98%;
+  background-color: #ddd;
   grid-area: 2 / 4 / 6 / 5;
-  
 }
 
 .calculator-keys {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  padding: 20px;
+  grid-gap: 8px;
+  padding: 8px;
 }
