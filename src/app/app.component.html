@@ -1,0 +1,61 @@
+<div class="calculator card" role="main">
+  <label type="text" class="calculator-screen z-depth-1">{{ resulat }}</label>
+
+  <div class="calculator-keys">
+    <button
+      type="button"
+      class="operator btn btn-info"
+      *ngFor="let item of ['+', '-', '/', '*']"
+      (click)="Show(item)"
+    >
+      +
+    </button>
+
+    <button
+      class="btn btn-light waves-effect"
+      *ngFor="let item of [7, 8, 9]"
+      (click)="Show(item)"
+    >
+      {{ item }}
+    </button>
+
+    <button
+      class="btn btn-light waves-effect"
+      *ngFor="let item of [4, 5, 6]"
+      (click)="Show(item)"
+    >
+      {{ item }}
+    </button>
+
+    <button
+      class="btn btn-light waves-effect"
+      *ngFor="let item of [1, 2, 3]"
+      (click)="Show(item)"
+    >
+      {{ item }}
+    </button>
+
+    <button
+      class="btn btn-light waves-effect"
+      *ngFor="let item of [0, '.']"
+      (click)="Show(item)"
+    >
+      {{ item }}
+    </button>
+    <button
+      type="button"
+      class="all-clear function btn btn-danger btn-sm"
+      (click)="clear()"
+    >
+      AC
+    </button>
+
+    <button
+      type="button"
+      class="equal-sign operator btn btn-default"
+      (click)="equal()"
+    >
+      =
+    </button>
+  </div>
+</div>
